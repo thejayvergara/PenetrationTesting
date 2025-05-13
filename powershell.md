@@ -15,3 +15,8 @@ get-wmiobject win32_service
 ```powershell
 get-itemproperty "HKCU:\Software\Microsoft\Windows\CurrentVersion\Run"
 ```
+
+## Groups
+```powershell
+get-localgroup
+```
