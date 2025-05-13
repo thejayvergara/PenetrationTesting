@@ -5,10 +5,10 @@ get-command -verb get
 get-command -noun windows*
 ```
 
-## POWERSHELL (LINUX EQUIVALENT)
+## (LINUX EQUIVALENT) POWERSHELL
 ```powershell
-get-location (pwd)
-get-childitem (ls)
-set-location (cd)
-get-content (cat)
+(pwd) get-location 
+(ls) get-childitem
+(cd) set-location
+(cat) get-content
 ```
