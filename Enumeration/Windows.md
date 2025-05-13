@@ -44,12 +44,12 @@
 systeminfo
 ```
 
-### HOSTNAME
+### Hostname
 ```cmd
 hostname
 ```
 
-### VERSION
+### Version
 ```cmd
 ver
 ```
@@ -57,22 +57,22 @@ ver
 
 
 ## NETWORKING INFORMATION:
-### NETWORKING INTERFACES AND IP ADDRESSES
+### Networking interfaces and IP Adrresses
 ```cmd
 ipconfig /all
 ```
 
-### ARP CACHE
+### ARP Cache
 ```cmd
 arp /a
 ```
 
-### NETWORK SHARES ON THE HOST
+### Network shares on the host
 ```cmd
 net share
 ```
 
-### NETWORK SHARES THE HOST KNOWS OF
+### Network shares the host knows of
 ```cmd
 net view
 ```
@@ -80,17 +80,17 @@ net view
 
 
 ## USER INFORMATION
-### CURRENT USER INFORMATION
+### Current user information
 ```cmd
 whoami /all
 ```
 
-### NETWORK SHARE USERS
+### Network share users
 ```cmd
 net user
 ```
 
-### NETWORK SHARE GROUPS
+### Network share groups
 ```cmd
 net group
 ```
