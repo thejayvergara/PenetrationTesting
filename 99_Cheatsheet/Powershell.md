@@ -41,6 +41,33 @@ find-module -name admintoolbox
 install-module admintoolbox
 ```
 
+## REMOTE COMMAND
+```powershell
+invoke-command -computername $hostname -scriptblock {$command}
+```
+
+## REGISTRY
+```powershell
+# Display Directories
+get-childitem registry::hkcu\software\microsoft\windows\currentversion
+
+# Key and Value
+get-itemproperty registry::hkcu\software\microsoft\windows\currentversion\runonce
+
+# Add key
+new-item hkcu:\software\microsoft\windows\currentversion\runonce -name $key
+
+# Add value
+new-itemproperty hkcu:\software\microsoft\windows\currentversion\runonce\$key -name $value
+
+# Remove key
+remove-item hkcu:\software\microsoft\windows\currentversion\runonce -name $key
+
+#Remove value
+remove-itemproperty hkcu:\software\microsoft\windows\currentversion\runonce\$key -name $value
+```
+
+
 ## Module Extensions
 .ps1 -- Powershell Main File \
 .psd1 -- Powershell Data File \
