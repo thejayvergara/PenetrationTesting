@@ -40,5 +40,15 @@ get-localgroup -name $localgroup_name
 
 Domain Users (Requires AdminToolBox Module)
 ```powershell
+# Install Remote System Administration Tools (RSAT)
+Get-WindowsCapability -Name RSAT* -Online | Add-WindowsCapability -Online
+
+# All Users
 get-aduser -filter *
+
+# Specific User
+get-aduser -identity $username
+
+# Search for user
+get-aduser -filter {Name -like 'Robert*'}
 ```
