@@ -38,7 +38,6 @@
      - IDS/IPS
 
 
-
 ## GENERAL SYSTEM INFORMATION:
 ```cmd
 systeminfo
