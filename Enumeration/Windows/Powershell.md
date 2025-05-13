@@ -37,3 +37,8 @@ get-localgroup
 # Users under a local group
 get-localgroup -name $localgroup_name
 ```
+
+Domain Users (Requires AdminToolBox Module)
+```powershell
+get-aduser -filter *
+```
