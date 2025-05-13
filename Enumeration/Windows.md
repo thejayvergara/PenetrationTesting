@@ -2,4 +2,4 @@
 *THINGS TO LOOK FOR:* \
 1. General System Information \
    - Hostname \
-   -OS Information (Name, Version, Configuration, Patches/Hotfixes) \
+   - OS Information (Name, Version, Configuration, Patches/Hotfixes) \
