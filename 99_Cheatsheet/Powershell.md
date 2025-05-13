@@ -33,4 +33,4 @@ install-module admintoolbox
 ## Module Extensions
 .ps1 -- Powershell Main File \
 .psd1 -- Powershell Data File \
-.psm1 -- Powershell Script File \
+.psm1 -- Powershell Script File
