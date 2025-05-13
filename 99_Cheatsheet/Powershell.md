@@ -12,10 +12,21 @@ get-command -module powershellget
 (alias) get-alias
 (cat) get-content
 (cd) set-location
+(cp) copy-item
 (clear) clear-host
 (history) get-history
 (ls) get-childitem
+(mkdir) new-item
 (pwd) get-location 
+(rm) remove-item
+```
+
+## FILTERING, SORTING, AND GROUPING
+```powershell
+$command | get-member
+$command | select-object $property1,$property2
+$command | sort-object $property1 | group-object $property2
+$command | where $property_value -like '*$search_string*'
 ```
 
 ## INSTALLING MODULES

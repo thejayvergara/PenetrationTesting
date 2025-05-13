@@ -51,4 +51,7 @@ get-aduser -identity $username
 
 # Search for user
 get-aduser -filter {Name -like 'Robert*'}
+
+# Search for files
+get-childitem c:\ -Filter "*.txt" -Recurse -File
 ```
