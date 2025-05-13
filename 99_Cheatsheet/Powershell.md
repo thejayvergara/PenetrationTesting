@@ -12,14 +12,15 @@ get-command -module powershellget
 (alias) get-alias
 (cat) get-content
 (cd) set-location
-(cp) copy-item
 (clear) clear-host
+(cp) copy-item
+(curl) invoke-webrequest
+(grep) select-string
 (history) get-history
 (ls) get-childitem
 (mkdir) new-item
 (pwd) get-location 
 (rm) remove-item
-(grep) select-string
 ```
 
 ## FILTERING, SORTING, AND GROUPING
@@ -69,7 +70,18 @@ remove-itemproperty hkcu:\software\microsoft\windows\currentversion\runonce\$key
 ```
 
 
+## Event Logs
+```powershell
+get-winevent -ListLog Security
+```
+
+## HTTP Requests
+```powershell
+invoke-webrequest $url -method get
+```
+
+
 ## Module Extensions
-.ps1 -- Powershell Main File \
-.psd1 -- Powershell Data File \
-.psm1 -- Powershell Script File
+.ps1 -- Executable Powershell scripts
+.psd1 -- Powershell Data file
+.psm1 -- Powershell Module File
