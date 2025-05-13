@@ -36,3 +36,73 @@
    - Available Services
      - Anti-Virus Solitions
      - IDS/IPS
+
+
+
+## GENERAL SYSTEM INFORMATION:
+```cmd
+systeminfo
+```
+
+### HOSTNAME
+```cmd
+hostname
+```
+
+### VERSION
+```cmd
+ver
+```
+
+
+
+## NETWORKING INFORMATION:
+### NETWORKING INTERFACES AND IP ADDRESSES
+```cmd
+ipconfig /all
+```
+
+### ARP CACHE
+```cmd
+arp /a
+```
+
+### NETWORK SHARES ON THE HOST
+```cmd
+net share
+```
+
+### NETWORK SHARES THE HOST KNOWS OF
+```cmd
+net view
+```
+
+
+
+## USER INFORMATION
+### CURRENT USER INFORMATION
+```cmd
+whoami /all
+```
+
+### NETWORK SHARE USERS
+```cmd
+net user
+```
+
+### NETWORK SHARE GROUPS
+```cmd
+net group
+```
+
+
+
+## SEARCHING FOR FILES
+```cmd
+where /r %directory% %file_to_find%
+```
+
+## SEARCHING FOR STRINGS WITHIN A FILE (SIMILAR TO `grep`)
+```cmd
+findstr %string_to_search% %file%
+```
