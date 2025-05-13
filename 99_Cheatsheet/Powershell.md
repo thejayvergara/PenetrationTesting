@@ -19,6 +19,7 @@ get-command -module powershellget
 (mkdir) new-item
 (pwd) get-location 
 (rm) remove-item
+(grep) select-string
 ```
 
 ## FILTERING, SORTING, AND GROUPING
@@ -51,7 +52,7 @@ invoke-command -computername $hostname -scriptblock {$command}
 # Display Directories
 get-childitem registry::hkcu\software\microsoft\windows\currentversion
 
-# Key and Value
+# Display Key and Value
 get-itemproperty registry::hkcu\software\microsoft\windows\currentversion\runonce
 
 # Add key
@@ -63,7 +64,7 @@ new-itemproperty hkcu:\software\microsoft\windows\currentversion\runonce\$key -n
 # Remove key
 remove-item hkcu:\software\microsoft\windows\currentversion\runonce -name $key
 
-#Remove value
+# Remove value
 remove-itemproperty hkcu:\software\microsoft\windows\currentversion\runonce\$key -name $value
 ```
 
