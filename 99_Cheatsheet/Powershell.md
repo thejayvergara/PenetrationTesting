@@ -3,7 +3,7 @@
 ```powershell
 get-command -verb get
 get-command -noun windows*
-```powershell
+```
 
 ## POWERSHELL (LINUX EQUIVALENT)
 ```powershell
