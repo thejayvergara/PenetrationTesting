@@ -1,4 +1,9 @@
 # WINDOWS ENUMERATION
+### QUESTIONS TO ANSWER:
+1. What system information can we pull from our target host?
+2. What other system(s) is our target host interacting with over the network?
+3. What user account(s) do we have access to, and what information is accessible from the account(s)?
+
 ### THINGS TO LOOK FOR:
 1. **General System Information**
    - Hostname
